@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksjeradar — Wall Street på 3 minutter</title>
+    <meta name="description" content="Daglige markedsobservasjoner fra NYSE, Nasdaq og S&P 500. Korte, ærlige nyheter levert før børsene åpner.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-base.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="variant-terminal">
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Aksjeradar</a>
+            <nav class="nav">
+                <a href="#news">feed</a>
+                <a href="#newsletter">sub</a>
+                <a href="#premium">pro</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <p class="prompt">curl aksjeradar.no/today</p>
+            <h1>Wall Street på 3 minutter<span class="cursor"></span></h1>
+            <p class="lede">Daglig aggregat av NYSE, Nasdaq, S&amp;P 500. Parset, prioritert, postet. Null pampers, null pikkolo.</p>
+            <div class="ticker-bar">
+                <div class="ticker-track">
+                    <span class="ticker-item"><span class="sym">SPX</span> 5,847.21 <span class="up">+0.42%</span></span>
+                    <span class="ticker-item"><span class="sym">NDX</span> 20,413.5 <span class="up">+0.81%</span></span>
+                    <span class="ticker-item"><span class="sym">DJI</span> 43,210.1 <span class="up">+0.18%</span></span>
+                    <span class="ticker-item"><span class="sym">VIX</span> 14.22 <span class="down">-3.4%</span></span>
+                    <span class="ticker-item"><span class="sym">DXY</span> 106.81 <span class="up">+0.12%</span></span>
+                    <span class="ticker-item"><span class="sym">BTC</span> 98,420 <span class="up">+2.1%</span></span>
+                    <span class="ticker-item"><span class="sym">SPX</span> 5,847.21 <span class="up">+0.42%</span></span>
+                    <span class="ticker-item"><span class="sym">NDX</span> 20,413.5 <span class="up">+0.81%</span></span>
+                    <span class="ticker-item"><span class="sym">DJI</span> 43,210.1 <span class="up">+0.18%</span></span>
+                    <span class="ticker-item"><span class="sym">VIX</span> 14.22 <span class="down">-3.4%</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="container">
+            <div class="section-title">
+                <h2>latest feed</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="row">
+                        <span class="ticker">$NVDA</span>
+                        <span>21:14 ET · 4m</span>
+                    </div>
+                    <h3>Nvidia Q3: Sterke tall, svak guiding. Aksjen -4 % etter stenging.</h3>
+                    <p>Datacenter-segmentet vokste 112 % YoY, men selskapet guidet lavere for neste kvartal — og analytikerne trodde ikke på margen.</p>
+                </article>
+                <article class="news-card">
+                    <div class="row">
+                        <span class="ticker">$AAPL</span>
+                        <span>20:48 ET</span>
+                    </div>
+                    <h3>Apple splitter seg mot S&amp;P 500</h3>
+                    <p>Tjenester +15 % YoY. iPhone Kina -8 %.</p>
+                </article>
+                <article class="news-card">
+                    <div class="row">
+                        <span class="ticker">$TSLA</span>
+                        <span>20:11 ET</span>
+                    </div>
+                    <h3>Tesla ny topp etter FSD-v13</h3>
+                    <p>Musk: "5–10× tryggere." Ingen data delt.</p>
+                </article>
+                <article class="news-card">
+                    <div class="row">
+                        <span class="ticker">$SPX</span>
+                        <span>16:02 ET</span>
+                    </div>
+                    <h3>S&amp;P 500 ny ATH, energi eneste røde</h3>
+                    <p>+0.42 % til 5,847.21.</p>
+                </article>
+                <article class="news-card">
+                    <div class="row">
+                        <span class="ticker">$DXY</span>
+                        <span>15:30 ET</span>
+                    </div>
+                    <h3>Powell-setning flyttet 2y-renten 8 bp</h3>
+                    <p>"Patient" holdt ikke. Markedet hørte "hawkish".</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <div class="newsletter">
+                <p class="label">// subscribe</p>
+                <h2>push notif før åpning</h2>
+                <p>Én e-post. Kl. 09:30 ET. Inneholder: hva som skjedde i går, hva du ser etter i dag, én graf.</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="epost@domene.no" required>
+                    <button type="submit" class="btn btn--primary">subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="premium">
+        <div class="container">
+            <div class="premium">
+                <div class="premium-grid">
+                    <div>
+                        <h2>// pro tier</h2>
+                        <p style="color: var(--color-ink-soft);">For den som vil gjøre noe med informasjonen — og snakke med andre som gjør det samme.</p>
+                        <div class="pro-actions">
+                            <a href="#" class="btn btn--primary">bli pro</a>
+                            <a href="https://discord.gg/DIN-INVITASJON" class="btn btn--ghost" target="_blank" rel="noopener">discord ↗</a>
+                        </div>
+                        <p class="pro-note">Betal via Substack. Discord-tilgang sendes etter betaling.</p>
+                    </div>
+                    <ul>
+                        <li>Ukentlig selskaps-dypdykk i e-post</li>
+                        <li>Månedlig portefølje-rapport</li>
+                        <li>Tilgang til lukket Discord-kanal for spørsmål og ticker-idéer</li>
+                        <li>Mulighet til å poste egne analyser og få tilbakemelding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>// aksjeradar v0.1</div>
+            <div><a href="#">/om</a> · <a href="#">/kontakt</a> · <a href="#">/privacy</a></div>
+        </div>
+        <div class="container">
+            <p class="footer-disclaimer">Ikke investeringsrådgivning. Data fra offentlige kilder. Gjør egne vurderinger.</p>
+        </div>
+    </footer>
+
+</main>
+</body>
+</html>
